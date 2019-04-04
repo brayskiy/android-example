@@ -1,0 +1,104 @@
+ext {
+    kotlinVersion = "1.3.20"
+    kotlinxSerialization = "0.9.1"
+
+    // SupportLibrary Versions
+    appCompatVersion = "1.1.0-alpha02"
+    appCompatAnnotationVersion = "1.0.1"
+    appCompatv4Version = "1.0.0"
+    appCompatCardViewVersion = "1.0.0"
+    appCompatMediaRouterVersion = "1.1.0-alpha01"
+    appCompatRecyclerViewVersion = "1.1.0-alpha02"
+    materialDesignVersion = "1.1.0-alpha02"
+    multidexVersion = '2.0.1'
+    multidexInstrumentationVersion = '2.0.0'
+    testRunnerVersion = "1.1.1"
+    espressoVersion = "3.1.1"
+    constraintLayoutVersion = "2.0.0-alpha3"
+    roomVersion = "2.1.0-alpha04"
+    workRuntimeVersion = "1.0.0-rc02"
+
+    junitVersion = "4.12"
+    runnerVersion = "1.0.2"
+    espressoVersion = "3.0.2"
+
+    daggerVersion = '2.17'
+
+    rxJavaVersion = '2.1.17'
+    rxAndroidVersion = '2.0.2'
+    rxJavaAdapterVersion = '1.0.0'
+
+    retrofitVersion = "2.4.0"
+    okioVersion = '1.14.0'
+    okhttpVersion = "3.11.0"
+    okHttpDownloaderVersion = "1.1.0"
+
+    gsonVersion = "2.8.5"
+    jschVersion = "0.1.54"
+
+    timberVersion = "4.6.1"
+
+    xCoreVersion = "1.1.1-alpha02"
+    xExtJUnitVersion = "1.1.1-alpha02"
+    xRunnerVersion = "1.1.2-alpha02"
+    xRulesVersion = "1.1.2-alpha02"
+    xEspressoVersion = "3.2.0-alpha02"
+
+    appLib = [
+            daggerCompiler        : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger                : "com.google.dagger:dagger:${daggerVersion}",
+            javax                 : "javax.annotation:jsr250-api:1.0",
+
+            rxJava                : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxJavaAdapter         : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${rxJavaAdapterVersion}",
+
+            retrofit              : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitRx            : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+            retrofitGson          : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter       : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+            retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            okio                  : "com.squareup.okio:okio:${okioVersion}",
+            okHttpDownloader      : "com.jakewharton.picasso:picasso2-okhttp3-downloader:${okHttpDownloaderVersion}",
+            okHttp                : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okHttpLogger          : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            gson                  : "com.google.code.gson:gson:${gsonVersion}",
+            jsch                  : "com.jcraft:jsch:${jschVersion}",
+
+            timber                : "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    supportLib = [
+            kotlinLib              : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            kotlinxSerialization   : "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${kotlinxSerialization}",
+
+            appCompat              : "androidx.appcompat:appcompat:${appCompatVersion}",
+            v4Support              : "androidx.legacy:legacy-support-v4:${appCompatv4Version}",
+            constraintLayout       : "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}",
+            recyclerView           : "androidx.recyclerview:recyclerview:${appCompatRecyclerViewVersion}",
+            design                 : "com.google.android.material:material:${materialDesignVersion}",
+            annotations            : "androidx.annotation:annotation:${appCompatAnnotationVersion}",
+            cardView               : "androidx.cardview:cardview:${appCompatCardViewVersion}",
+            multidex               : "androidx.multidex:multidex:${multidexVersion}",
+            multidexInstrumentation: "androidx.multidex:multidex-instrumentation:${multidexInstrumentationVersion}",
+
+            // NEW
+
+            mediaRouter           : "androidx.mediarouter:mediarouter:${appCompatMediaRouterVersion}",
+            workRuntime           : "android.arch.work:work-runtime:${workRuntimeVersion}",
+            roomRuntime           : "androidx.room:room-runtime:${roomVersion}",
+            roomCompiler          : "androidx.room:room-compiler:${roomVersion}",
+            versionedparcelable   : "androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01"
+    ]
+
+    testLib = [
+            junit       : "junit:junit:${junitVersion}",
+            testRunner  : "com.android.support.test:runner:${runnerVersion}",
+            espressoCore: "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+
+            xCore: "androidx.test:core:${xCoreVersion}",
+            xJunit: "androidx.test.ext:junit:${xExtJUnitVersion}",
+            xRunner: "androidx.test:runner:${xRunnerVersion}",
+            xEspressoCore: "androidx.test.espresso:espresso-core:${xEspressoVersion}"
+    ]
+}
