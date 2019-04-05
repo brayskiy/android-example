@@ -92,14 +92,15 @@ ext {
     ]
 
     testLib = [
-            junit       : "junit:junit:${junitVersion}",
-            testRunner  : "com.android.support.test:runner:${runnerVersion}",
-            espressoCore: "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            junit           : "junit:junit:${junitVersion}",
+            testRunner      : "com.android.support.test:runner:${runnerVersion}",
+            espressoCore    : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
 
-            xCore: "androidx.test:core:${xCoreVersion}",
-            xJunit: "androidx.test.ext:junit:${xExtJUnitVersion}",
-            xRunner: "androidx.test:runner:${xRunnerVersion}",
-            xRules: "androidx.test:rules:${xRulesVersion}",
-            xEspressoCore: "androidx.test.espresso:espresso-core:${xEspressoVersion}"
+            xCore           : "androidx.test:core:${xCoreVersion}",
+            xJunit          : "androidx.test.ext:junit:${xExtJUnitVersion}",
+            xRunner         : "androidx.test:runner:${xRunnerVersion}",
+            xRules          : "androidx.test:rules:${xRulesVersion}",
+            xEspressoCore   : "androidx.test.espresso:espresso-core:${xEspressoVersion}",
+            xEspressoContrib: "androidx.test.espresso:espresso-contrib:${xEspressoVersion}"
     ]
 }
