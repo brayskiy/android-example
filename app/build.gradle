@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++14 -frtti -fexceptions"
@@ -48,9 +48,6 @@ configurations.all {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation testLib.junit
-    androidTestImplementation testLib.testRunner
-    androidTestImplementation testLib.espressoCore
 
     implementation supportLib.kotlinLib
     implementation supportLib.kotlinxSerialization
@@ -78,8 +75,10 @@ dependencies {
     implementation appLib.jsch
     implementation appLib.timber
 
+    testImplementation testLib.junit
     androidTestImplementation testLib.xCore
     androidTestImplementation testLib.xJunit
     androidTestImplementation testLib.xRunner
+    androidTestImplementation testLib.xRules
     androidTestImplementation testLib.xEspressoCore
 }

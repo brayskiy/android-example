@@ -99,6 +99,7 @@ ext {
             xCore: "androidx.test:core:${xCoreVersion}",
             xJunit: "androidx.test.ext:junit:${xExtJUnitVersion}",
             xRunner: "androidx.test:runner:${xRunnerVersion}",
+            xRules: "androidx.test:rules:${xRulesVersion}",
             xEspressoCore: "androidx.test.espresso:espresso-core:${xEspressoVersion}"
     ]
 }
