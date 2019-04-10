@@ -32,7 +32,7 @@ class AppModule(private val application: Application) {
     @Provides
     @Singleton
     fun getSharedPreferences(): SharedPreferences {
-        return application.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+        return application.getSharedPreferences(APP_PREFS, Context.MODE_PRIVATE)
     }
 
     @IoSched
@@ -76,7 +76,9 @@ class AppModule(private val application: Application) {
         }
 
     companion object {
-        private val PICASSO_DISK_CACHE_SIZE = 40 * 1024 * 1024
-        private val PICASSO_MEMORY_CACHE_SIZE = 20 * 1024 * 1024
+        private const val PICASSO_DISK_CACHE_SIZE = 40 * 1024 * 1024
+        private const val PICASSO_MEMORY_CACHE_SIZE = 20 * 1024 * 1024
+
+        private const val APP_PREFS = "appPrefs"
     }
 }

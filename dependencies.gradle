@@ -9,9 +9,12 @@ ext {
     appCompatCardViewVersion = "1.0.0"
     appCompatMediaRouterVersion = "1.1.0-alpha01"
     appCompatRecyclerViewVersion = "1.1.0-alpha02"
+
     materialDesignVersion = "1.1.0-alpha02"
+
     multidexVersion = '2.0.1'
     multidexInstrumentationVersion = '2.0.0'
+
     testRunnerVersion = "1.1.1"
     espressoVersion = "3.1.1"
     constraintLayoutVersion = "2.0.0-alpha3"
@@ -43,6 +46,10 @@ ext {
     xRunnerVersion = "1.1.2-alpha02"
     xRulesVersion = "1.1.2-alpha02"
     xEspressoVersion = "3.2.0-alpha02"
+
+    mockitoVersion = "2.0.2-beta"
+    mockitoCoreVersion = "2.13.0"
+    mockitoAndroidVersion = "2.13.0"
 
     appLib = [
             daggerCompiler        : "com.google.dagger:dagger-compiler:${daggerVersion}",
@@ -101,6 +108,10 @@ ext {
             xRunner         : "androidx.test:runner:${xRunnerVersion}",
             xRules          : "androidx.test:rules:${xRulesVersion}",
             xEspressoCore   : "androidx.test.espresso:espresso-core:${xEspressoVersion}",
-            xEspressoContrib: "androidx.test.espresso:espresso-contrib:${xEspressoVersion}"
+            xEspressoContrib: "androidx.test.espresso:espresso-contrib:${xEspressoVersion}",
+
+            mockito         : "org.mockito:mockito-all:${mockitoVersion}",
+            mockitoCore     : "org.mockito:mockito-core:${mockitoCoreVersion}",
+            mockitoAndroid  : "org.mockito:mockito-android:${mockitoAndroidVersion}",
     ]
 }

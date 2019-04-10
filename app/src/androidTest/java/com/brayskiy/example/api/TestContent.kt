@@ -1,4 +1,4 @@
-package com.bstech.alterozoom.client.api
+package com.brayskiy.example.api
 
 import com.brayskiy.example.rest.BaseUrl
 import com.brayskiy.example.rest.Keys
@@ -10,6 +10,10 @@ import org.junit.Test
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.CountDownLatch
+
+/**
+ * Created by brayskiy on 04/05/19.
+ */
 
 class TestContent {
 

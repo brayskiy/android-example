@@ -23,7 +23,7 @@ interface AppComponent {
 
     fun getApplication(): Application
 
-    fun getSharedPreferences(): SharedPreferences
+    val sharedPreferences: SharedPreferences
 
     @IoSched
     fun getIOScheduler(): Scheduler
@@ -37,5 +37,5 @@ interface AppComponent {
 
     fun getGson(): Gson
 
-    fun getPicasso(): Picasso
+    val picasso: Picasso
 }

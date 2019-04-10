@@ -82,4 +82,7 @@ dependencies {
     androidTestImplementation testLib.xRules
     androidTestImplementation testLib.xEspressoCore
     androidTestImplementation testLib.xEspressoContrib
+
+    testImplementation testLib.mockito
+    androidTestImplementation testLib.mockitoAndroid
 }

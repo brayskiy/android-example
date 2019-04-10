@@ -1,4 +1,4 @@
-package com.bstech.alterozoom.client.activity
+package com.brayskiy.example.activity
 
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.Espresso.onView
@@ -10,9 +10,12 @@ import androidx.test.runner.AndroidJUnit4
 import com.brayskiy.example.R
 import org.junit.Test
 import org.junit.runner.RunWith
-import com.brayskiy.example.activity.MainActivity
 import com.brayskiy.example.card.MovieSummaryCard
 import org.junit.Rule
+
+/**
+ * Created by brayskiy on 04/05/19.
+ */
 
 @RunWith(AndroidJUnit4::class)
 class TestMainActivity: AndroidJUnitRunner() {
