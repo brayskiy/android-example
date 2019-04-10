@@ -7,6 +7,10 @@ import androidx.core.content.ContextCompat.getSystemService
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
 
+/**
+ * Created by brayskiy on 01/31/19.
+ */
+
 object Network {
     fun isNetworkOnline(context: Context): Boolean {
         try {

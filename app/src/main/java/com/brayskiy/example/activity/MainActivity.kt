@@ -46,7 +46,7 @@ class MainActivity : BaseActivity<MainActivityContract.IAdapter, MainActivityCon
 
         override fun getItem(position: Int): Fragment {
             return when (position) {
-                HomeTabs.CONTROL_TAB -> popularMoviesFragment
+                HomeTabs.POPULAR_TAB -> popularMoviesFragment
                 else -> topRatedMoviesFragment
             }
         }
@@ -57,8 +57,8 @@ class MainActivity : BaseActivity<MainActivityContract.IAdapter, MainActivityCon
 
         override fun getPageTitle(position: Int): CharSequence? {
             return when (position) {
-                HomeTabs.CONTROL_TAB -> getString(R.string.home_tab_popular_movies)
-                HomeTabs.SSH_TAB -> getString(R.string.home_tab_top_rated_movies)
+                HomeTabs.POPULAR_TAB -> getString(R.string.home_tab_popular_movies)
+                HomeTabs.TOP_RATED_TAB -> getString(R.string.home_tab_top_rated_movies)
                 else -> return null
             }
         }
@@ -142,8 +142,8 @@ class MainActivity : BaseActivity<MainActivityContract.IAdapter, MainActivityCon
 
     private fun getTabIcon(position: Int, selected: Boolean = false): Drawable? {
         val icon: Int = when (position) {
-            HomeTabs.CONTROL_TAB -> R.drawable.ic_baseline_touch_app_24px
-            HomeTabs.SSH_TAB -> R.drawable.ic_baseline_network_check_24px
+            HomeTabs.POPULAR_TAB -> R.drawable.ic_baseline_touch_app_24px
+            HomeTabs.TOP_RATED_TAB -> R.drawable.ic_baseline_network_check_24px
             else -> -1
         }
 

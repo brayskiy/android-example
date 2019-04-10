@@ -1,16 +1,12 @@
 package com.brayskiy.example
 
 import android.content.SharedPreferences
-import com.brayskiy.example.models.MovieSummary
-import org.junit.Assert.assertEquals
 
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Matchers
 import org.mockito.Mock
 import org.mockito.MockitoAnnotations
 
-import org.mockito.Matchers.*
 import org.mockito.Mockito.*
 
 /**

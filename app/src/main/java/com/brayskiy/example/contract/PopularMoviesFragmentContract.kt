@@ -1,12 +1,8 @@
 package com.brayskiy.example.contract
 
 import android.app.Application
-import android.content.Context
 import android.content.SharedPreferences
-import android.net.ConnectivityManager
-import android.net.wifi.WifiManager
 import android.os.Bundle
-import android.text.format.Formatter
 import androidx.lifecycle.MutableLiveData
 import com.brayskiy.example.base.BaseFragmentHandler
 import com.brayskiy.example.base.IContract
@@ -16,13 +12,10 @@ import com.brayskiy.example.dagger.IoSched
 import com.brayskiy.example.dagger.UiSched
 import com.brayskiy.example.models.MovieSummary
 import com.brayskiy.example.models.MoviesData
-import com.brayskiy.example.models.NetworkInfo
 import com.brayskiy.example.rest.Keys
 import com.brayskiy.example.rest.MobileService
 import com.brayskiy.example.util.Network
-import io.reactivex.Observable
 import io.reactivex.Scheduler
-import java.util.*
 import javax.inject.Inject
 
 /**

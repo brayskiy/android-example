@@ -7,6 +7,10 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
+/**
+ * Created by brayskiy on 01/31/19.
+ */
+
 interface MobileService {
     @GET("popular")
     fun listPopular(@Query("api_key") api_key: String, @Query("page") page: Int?): Observable<MoviesData>

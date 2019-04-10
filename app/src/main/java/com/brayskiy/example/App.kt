@@ -6,6 +6,10 @@ import com.brayskiy.example.base.BaseApplication
 import com.brayskiy.example.core.log.Log
 import com.brayskiy.example.dagger.*
 
+/**
+ * Created by brayskiy on 01/31/19.
+ */
+
 class App : BaseApplication() {
     private var appComponent: AppComponent? = null
     private var activityComponent: ActivityComponent? = null

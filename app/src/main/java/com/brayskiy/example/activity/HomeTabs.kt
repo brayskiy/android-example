@@ -5,7 +5,7 @@ package com.brayskiy.example.activity
  */
 
 object HomeTabs {
-    const val CONTROL_TAB = 0
-    const val SSH_TAB = 1
+    const val POPULAR_TAB = 0
+    const val TOP_RATED_TAB = 1
     const val COUNT = 2
 }

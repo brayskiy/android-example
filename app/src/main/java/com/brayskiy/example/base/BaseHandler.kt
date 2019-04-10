@@ -3,6 +3,10 @@ package com.brayskiy.example.base
 import android.app.Activity
 import android.os.Bundle
 
+/**
+ * Created by brayskiy on 01/31/19.
+ */
+
 abstract class BaseHandler<A : IContract.Adapter> : IContract.Handler<A>, BaseActionHandler() {
 
     @JvmField
