@@ -48,23 +48,4 @@ class AppModuleTest {
         editor.apply()
         verify<SharedPreferences.Editor>(editor).apply()
     }
-
-    @Throws(Exception::class)
-    fun testUpdatedWhenLessThan24HoursHasPassed() {
-        val lastUpdated = System.currentTimeMillis()
-
-        //when(sharedPreferences.getLong(ConfigInfoHandler.KEY_LAST_UPDATED, 0)).thenReturn
-        //        (lastUpdated);
-
-        //configHandler.updateConfigIfOld();
-
-        //verifyZeroInteractions(mobileService);
-    }
-
-
-    fun getMovieSummary(): MovieSummary  {
-       return MovieSummary(100, 12345, true, 0.5, "Title", 0.8,
-           "poster path", "en", "Original Title", listOf(1, 2, 3),
-           "backdrop path", false, "Movie overview", "Mar 12, 2012")
-    }
 }

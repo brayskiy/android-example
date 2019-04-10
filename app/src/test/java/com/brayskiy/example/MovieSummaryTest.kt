@@ -1,13 +1,14 @@
 package com.brayskiy.example
 
 import com.brayskiy.example.models.MovieSummary
+import org.junit.Assert.assertEquals
 
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mock
 import org.mockito.MockitoAnnotations
 
 import org.mockito.Mockito.*
+import org.mockito.Spy
 
 /**
  * Created by brayskiy on 04/05/19.
@@ -15,7 +16,7 @@ import org.mockito.Mockito.*
 
 class MovieSummaryTest {
 
-    @Mock lateinit var moviesData: MutableList<MovieSummary>
+    @Spy var moviesData: MutableList<MovieSummary> = mutableListOf()
 
     @Before
     fun init() {
@@ -28,6 +29,9 @@ class MovieSummaryTest {
 
         moviesData.add(summary)
         verify(moviesData).add(summary)
+
+        assertEquals(1, moviesData.size)
+        assertEquals(0.5, moviesData[0].voteAverage, 0.0001)
     }
 
 
