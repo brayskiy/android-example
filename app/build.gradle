@@ -81,4 +81,5 @@ dependencies {
     androidTestImplementation testLib.xRunner
     androidTestImplementation testLib.xRules
     androidTestImplementation testLib.xEspressoCore
+    androidTestImplementation testLib.xEspressoContrib
 }

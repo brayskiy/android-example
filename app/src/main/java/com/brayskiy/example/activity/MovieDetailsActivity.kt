@@ -54,6 +54,9 @@ class MovieDetailsActivity : BaseActivity<MovieDetailsActivityContract.IAdapter,
             displayDialog(dialogData)
         }
 
+        // TODO TEST
+        val movieSummary = intent.getSerializableExtra(MOVIE_SUMMARY)
+
         val movieId = intent.getIntExtra(MOVIE_ID, 0)
         handler.getMovieDetails(movieId)
     }
@@ -113,5 +116,6 @@ class MovieDetailsActivity : BaseActivity<MovieDetailsActivityContract.IAdapter,
 
     companion object {
         const val MOVIE_ID = "movie_id"
+        const val MOVIE_SUMMARY = "movie_summary"
     }
 }

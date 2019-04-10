@@ -2,7 +2,6 @@ package com.bstech.alterozoom.client.activity
 
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule

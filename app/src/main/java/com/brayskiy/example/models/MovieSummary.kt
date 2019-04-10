@@ -2,11 +2,13 @@ package com.brayskiy.example.models
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.*
 
 /**
  * Created by brayskiy on 03/08/19.
  */
 
+@Serializable
 data class MovieSummary(
     @SerializedName("vote_count") @Expose val voteCount: Int,
     @SerializedName("id") @Expose val id: Int,
@@ -22,4 +24,4 @@ data class MovieSummary(
     @SerializedName("adult") @Expose val adult: Boolean,
     @SerializedName("overview") @Expose val overview: String,
     @SerializedName("release_date") @Expose val releaseDate: String
-)
+): java.io.Serializable

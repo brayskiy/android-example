@@ -120,6 +120,7 @@ class PopularMoviesFragment : BaseFragment<PopularMoviesFragmentContract.IFragme
 
     override fun onCardClicked(movieSummary: MovieSummary) {
         val intent = Intent(context, MovieDetailsActivity::class.java)
+        intent.putExtra(MovieDetailsActivity.MOVIE_SUMMARY, movieSummary)
         intent.putExtra(MovieDetailsActivity.MOVIE_ID, movieSummary.id)
         startActivity(intent)
     }
