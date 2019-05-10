@@ -32,6 +32,7 @@ class MovieSummaryTest {
 
         assertEquals(1, moviesData.size)
         assertEquals(0.5, moviesData[0].voteAverage, 0.0001)
+        assertEquals("Title", moviesData[0].title)
     }
 
 
