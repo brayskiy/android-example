@@ -16,7 +16,7 @@ import org.mockito.Spy
 
 class MovieSummaryTest {
 
-    @Spy var moviesData: MutableList<MovieSummary> = mutableListOf()
+    @Spy val moviesData: MutableList<MovieSummary> = mutableListOf()
 
     @Before
     fun init() {

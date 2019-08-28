@@ -47,7 +47,6 @@ interface MovieDetailsActivityContract {
 
         override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
             Log.i("Grant Results: " + grantResults.size)
-
         }
 
         override fun getMovieDetails(id: Int) {
